@@ -15,11 +15,7 @@ If you don't have Python installed on your computer, you need to download and in
 
 ### 2. Download the Email Guesser Script
 
-1. Download the 
-
-emailGuesser.py
-
- script file to your computer.
+1. Download the emailGuesser.py script file to your computer.
 2. Save it in a folder where you can easily find it.
 
 ### 3. Run the Script
@@ -29,11 +25,7 @@ emailGuesser.py
    - On macOS: Open `Terminal` from the Applications folder.
    - On Linux: Open your preferred terminal application.
 
-2. Navigate to the folder where you saved the 
-
-emailGuesser.py
-
- script. You can use the `cd` command to change directories. For example:
+2. Navigate to the folder where you saved the emailGuesser.py script. You can use the `cd` command to change directories. For example:
    ```sh
    cd path\to\your\folder
    ```
