@@ -90,17 +90,11 @@ def get_user_input():
             else:
                 print("All fields are required. Please try again.")
 
-def main():
+def handle_output_choice(combinations):
     """
-    Main function to run the email guesser script.
+    Handle the user's choice for output (console or file).
     """
     while True:
-        name, surname, domain = get_user_input()
-        if not name or not surname or not domain:
-            continue
-        
-        combinations = generate_email_combinations(name, surname, domain)
-        
         output_choice = input("Do you want to display the results in the console or save to a file? (C/F): ").strip().lower()
         if output_choice == "c":
             display_combinations(combinations)
@@ -111,6 +105,18 @@ def main():
             break
         else:
             print("Invalid choice. Please enter 'C' for a console output OR 'F' for a file output.")
+
+def main():
+    """
+    Main function to run the email guesser script.
+    """
+    while True:
+        name, surname, domain = get_user_input()
+        if not name or not surname or not domain:
+            continue
+        
+        combinations = generate_email_combinations(name, surname, domain)
+        handle_output_choice(combinations)
 
 if __name__ == "__main__":
     main()
